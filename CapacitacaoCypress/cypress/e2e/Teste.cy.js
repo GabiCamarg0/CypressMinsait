@@ -3,6 +3,7 @@
 describe('template spec', () => {
   it('Preencher campos', () => {
     cy.visit('https://testautomationpractice.blogspot.com/')
+    cy.contains('Automation Testing Practice').should('be.visible')
     cy.get('#name').type('teste')
     cy.get('input[placeholder="Enter EMail"]').type('teste@hotmail.com') 
     cy.get('#phone').type('8132-1992')
@@ -18,12 +19,16 @@ describe('template spec', () => {
     //cy.get('singleFileInput').should('have.value','\\cypress\\fixtures\\TESTE.png')
 
     })
-    it.only('Validar botão Enter', () => {
+    it('Validar botão Enter', () => {
       cy.visit('https://testautomationpractice.blogspot.com/')
       cy.get('button[name="start"]').click()
       cy.get('button[name="stop"]').should('be.visible')
+      cy.contains('STOP').should('be.visible')
+      cy.contains('button','STOP').click()
       
     });
   
 })
+
+
 
