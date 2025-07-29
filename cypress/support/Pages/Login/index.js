@@ -1,3 +1,4 @@
+
 const el = require('./elements').ELEMENTS
 class Login {
 
@@ -24,7 +25,7 @@ class Login {
 
     validarComContains(erro){
         cy.contains(erro).should('be.visible')
-    }
+    }   
 
 }
 export default new Login()
