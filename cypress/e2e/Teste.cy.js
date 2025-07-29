@@ -1,7 +1,7 @@
 ///<reference types= 'cypress'/>
 
 describe('template spec', () => {
-  it('Preencher campos', () => {
+  it.only('Preencher campos', () => {
     cy.visit('https://testautomationpractice.blogspot.com/')
     cy.contains('Automation Testing Practice').should('be.visible')
     cy.get('#name').type('teste')

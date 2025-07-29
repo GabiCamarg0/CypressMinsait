@@ -21,7 +21,7 @@ describe('Realizar Login',() =>{
          Login.validarComContains('Password is required')
     })
 
-    it.only("Realizar Login sem informar o usuario",() => {
+    it("Realizar Login sem informar o usuario",() => {
          Login.acessarURL()
          Login.preencherPassword('secret_sauce')
          Login.clicarEmLogin()
