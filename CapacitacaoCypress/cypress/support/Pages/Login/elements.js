@@ -1,14 +1,11 @@
-
-
-import { url } from "inspector";
-
-//Elementos da pagina de login
+//Elementos da pagina de Login
 export const ELEMENTS ={
-    url: 'https://www.saucedemo.com/v1/'
-    
-    campoUsername: "#user-name",
-    campoPassword: "#password",
-    botaologin: "#login-buttonnp"
 
-
+ url: 'https://www.saucedemo.com/v1/',
+ campoUsername: '#user-name',
+ campoPassword: '#password',
+ botaoLogin: '#login-button',
+ imgSwagLabs: 'div[class="login_logo"]',
+ msgErro: 'h3[data-test="error"]'
+ 
 }
