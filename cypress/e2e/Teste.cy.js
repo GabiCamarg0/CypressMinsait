@@ -14,7 +14,7 @@ describe('Teste - Formulário', () => {
     cy.get('#datepicker').click()
     cy.get('a[data-date="24"]').click()
     cy.get('#datepicker').should('have.value','07/24/2025')
-    cy.get('#singleFileInput').selectFile('cypress\\fixtures\\imgTest.png')
+    cy.get('#singleFileInput').selectFile('cypress\\fixtures\\TESTE.png')
     //cy.get('#singleFileInput').should('have.value','C:\\fakepath\\cypress\\fixtures\\imgTest.png')
     
   })
