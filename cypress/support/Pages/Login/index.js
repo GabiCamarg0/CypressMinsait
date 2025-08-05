@@ -1,9 +1,8 @@
-
 const el = require('./elements').ELEMENTS
 class Login {
 
-    acessarURL(){
-        cy.visit(el.url)
+    acessarURL(url){
+        cy.visit(url)
         cy.get(el.imgSwagLabs).should('be.visible')
     }
 
@@ -25,7 +24,7 @@ class Login {
 
     validarComContains(erro){
         cy.contains(erro).should('be.visible')
-    }   
+    }
 
 }
 export default new Login()
