@@ -18,7 +18,7 @@ describe('Realizar Login', function(){
     })
 
     beforeEach(function(){
-          Login.acessarURL('/')
+          Login.acessarURL('https://www.saucedemo.com/')
           cy.url().should('include', 'saucedemo')
     })
      
@@ -45,7 +45,7 @@ describe('Realizar Login', function(){
 
     const destinatarioFaker = criarDestinatario()
 
-    it.only("Realizar compra com sucesso", function(){
+    it("Realizar compra com sucesso", function(){
          Login.preenherUsername(this.credenciaisExt.users.standard)
          Login.preencherPassword(this.credenciaisExt.passwords.password_valido)
          Login.clicarEmLogin()

@@ -2,6 +2,7 @@ const el = require('./elements').ELEMENTS
 class Login {
 
     acessarURL(url){
+        console.log("🔍 Acessando URL:", url);
         cy.visit(url)
         cy.get(el.imgSwagLabs).should('be.visible')
     }
